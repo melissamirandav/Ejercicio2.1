@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 Archivo modificado
+=======
+se crea modificacion sobre archivo1 para ejericicio de repositarios para solucionar problematicas
+asasas
+
+
+
+>>>>>>> b1e46b19674972d4b15e3730d9ad37b93fe6060d
