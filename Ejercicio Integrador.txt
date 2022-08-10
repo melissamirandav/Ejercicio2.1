@@ -1,0 +1,307 @@
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/DH (main)
+$ cd ..
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio (main)
+$ cd "Ejercicio Informatica"
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ echo "# Ejercicio2.1" >> README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/melissamirandav/Ejercicio2.1.git
+git push -u origin main
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git init
+Initialized empty Git repository in C:/Users/MELISSA MIRANDA}/OneDrive/Escritori
+o/Ejercicio Informatica/.git/
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
+t time Git touches it
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git commit -m "first commit"
+[main (root-commit) 8a8a372] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git branch -M main
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git remote add origin https://github.com/melissamirandav/Ejercicio2.1.git
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 225 bytes | 45.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/melissamirandav/Ejercicio2.1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ touch matematicas.txt castellano.txt sociales.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ nano matematicas.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ nano castellano.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ nano sociales.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git add .
+warning: in the working copy of 'castellano.txt', LF will be replaced by CRLF th
+e next time Git touches it
+warning: in the working copy of 'matematicas.txt', LF will be replaced by CRLF t
+he next time Git touches it
+warning: in the working copy of 'sociales.txt', LF will be replaced by CRLF the
+next time Git touches it
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   castellano.txt
+        new file:   matematicas.txt
+        new file:   sociales.txt
+
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git commit -m "nuevos archivos"
+[main c747862] nuevos archivos
+ 3 files changed, 3 insertions(+)
+ create mode 100644 castellano.txt
+ create mode 100644 matematicas.txt
+ create mode 100644 sociales.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin main
+To https://github.com/melissamirandav/Ejercicio2.1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/melissamirandav/Ejercicio
+2.1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git pull origin main
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 263 bytes | 5.00 KiB/s, done.
+From https://github.com/melissamirandav/Ejercicio2.1
+ * branch            main       -> FETCH_HEAD
+   8a8a372..3819baf  main       -> origin/main
+Merge made by the 'ort' strategy.
+ archivo1.txt | 0
+ archivo2.txt | 0
+ archivo3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 archivo1.txt
+ create mode 100644 archivo2.txt
+ create mode 100644 archivo3.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 712 bytes | 142.00 KiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/melissamirandav/Ejercicio2.1.git
+   3819baf..519efb9  main -> main
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ nano archivo1.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git add .
+warning: in the working copy of 'archivo1.txt', LF will be replaced by CRLF the
+next time Git touches it
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git commit -m "modificacion archivo 1.txt"
+[main cd71626] modificacion archivo 1.txt
+ 1 file changed, 1 insertion(+)
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 168.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/melissamirandav/Ejercicio2.1.git
+   519efb9..cd71626  main -> main
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ nano archivo1.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   archivo1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git add archivo1.txt
+warning: in the working copy of 'archivo1.txt', LF will be replaced by CRLF the
+next time Git touches it
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git commit -m "segunda modificacion prueba"
+[main e58c66f] segunda modificacion prueba
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin
+To https://github.com/melissamirandav/Ejercicio2.1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/melissamirandav/Ejercicio
+2.1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ gish push origin main
+bash: gish: command not found
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin main
+To https://github.com/melissamirandav/Ejercicio2.1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/melissamirandav/Ejercicio
+2.1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), 271 bytes | 8.00 KiB/s, done.
+From https://github.com/melissamirandav/Ejercicio2.1
+ * branch            main       -> FETCH_HEAD
+   cd71626..a24cb0d  main       -> origin/main
+Auto-merging archivo1.txt
+CONFLICT (content): Merge conflict in archivo1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ nano archivo1.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ code .
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ git add archivo1.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ git commit -m "solucion conflicto"
+[main 8e14d7c] solucion conflicto
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin main
+To https://github.com/melissamirandav/Ejercicio2.1.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/melissamirandav/Ejercicio
+2.1.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), 257 bytes | 4.00 KiB/s, done.
+From https://github.com/melissamirandav/Ejercicio2.1
+ * branch            main       -> FETCH_HEAD
+   a24cb0d..232467d  main       -> origin/main
+Auto-merging archivo1.txt
+CONFLICT (content): Merge conflict in archivo1.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ nano archivo1.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ git add archivo1.txt
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main|MERGING)
+$ git commit -m "solucion conflicto"
+[main b1e46b1] solucion conflicto
+
+MELISSA MIRANDA}@LAPTOP-2I8DJJ9I MINGW32 ~/OneDrive/Escritorio/Ejercicio Informatica (main)
+$ git push origin main
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 880 bytes | 440.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
+To https://github.com/melissamirandav/Ejercicio2.1.git
+   232467d..b1e46b1  main -> main
